@@ -14,7 +14,7 @@ def storage_information_view(request):
         duration = get_duration(visit)
         entry_local_time = localtime(visit.entered_at)
         visit_time = format_duration(duration)
-        lon_visit_flag = is_visit_long(duration)
+        long_visit_flag = is_visit_long(duration)
         person = visit.passcard
 
         not_closed_visits.append(
@@ -22,7 +22,7 @@ def storage_information_view(request):
                 'who_entered' : person,
                 'entered_at' : entry_local_time,
                 'duration' : visit_time,
-                'is_strange' : lon_visit_flag,
+                'is_strange' : long_visit_flag,
             }
         )
         context = {
