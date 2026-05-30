@@ -77,8 +77,14 @@ pip install -r requirements.txt
 Пример:
 
 ```env
+DB_ENGINE='DB_ENGINE'
+DB_HOST='DB_HOST'
+DB_PORT='DB_PORT'
+DB_NAME='DB_NAME'
+DB_USER='DB_USER'
+DB_PASSWORD='DB_PASSWORD'
+SECRET_KEY='SECRET_KEY'
 DEBUG=True
-SECRET_KEY=your_secret_key
 ```
 
 ## Запуск проекта
