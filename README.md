@@ -84,6 +84,10 @@ DB_NAME='DB_NAME'
 DB_USER='DB_USER'
 DB_PASSWORD='DB_PASSWORD'
 SECRET_KEY='SECRET_KEY'
+ALLOWED_HOSTS=[
+    "example.com",
+    "://example.com",
+    ]
 DEBUG=True
 ```
 
